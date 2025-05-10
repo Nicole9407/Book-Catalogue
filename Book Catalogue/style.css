@@ -1,0 +1,233 @@
+body {
+    background-color: silver;
+    color: black; /* Setting the default text color to black */
+    font-family: sans-serif; /* A basic fallback font */
+    margin: 0; /* Reset default browser margins */
+    padding: 0; /* Reset default browser padding */
+  }
+
+  header {
+    background-color: black;
+    color: white; /* Set header text to white for contrast */
+    padding: 20px; /* Add some padding around the content */
+    text-align: center; /* Center the heading */
+    position: relative; /* To allow for image overlay positioning */
+  }
+
+  header::before {
+    content: "";
+    background-image: url('./Images/Main-Page-Images/Header-Background.jpg');
+    background-position: center;
+    background-size: cover; /* Added this line */
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  header h1 {
+    font-size: 2.5em; /* Adjust the size as needed */
+    margin-bottom: 10px;
+    font-family: 'MedievalSharp', cursive; /* Example font, adjust as desired */
+  }
+
+  nav {
+    position: relative; /* Create a stacking context */
+    z-index: 10; /* Ensure it's on top of header::before */
+  }
+
+  nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 10px 0; /* Add some vertical margin */
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center the items horizontally for now */
+    gap: 40px; /* Space between the list items */
+  }
+  
+  nav li {
+    padding: 10px 15px; /* Add some padding around each item */
+  }
+  nav ul li a[href="my-books.html"] {
+    background-color: silver;
+    color: black; /* Adjust text color for silver background */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(255, 0, 0, 0.3); /* Subtle red shadow */
+  }
+  
+  nav ul li a[href="my-books.html"]:hover {
+    background-color: #a9a9a9; /* Slightly darker silver on hover */
+  }
+
+  nav ul li a[href="index.html"] {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: lightgray;
+    border: 1px solid #888; /* Subtle gray border */
+    filter: blur(0.6px); /* Apply a 1-pixel blur */
+  }
+
+  #currently-reading {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px; /* Add some padding around the section */
+    background-image: url('./Images/Main-Page-Images/Currently-Reading-Background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Make the background image cover the section */
+    background-position: center; /* Center the background image */
+    color: silver; /* Ensure text is readable against the background */
+  }
+  
+  #currently-reading h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+  }
+  
+  .current-book-container {
+    display: flex; /* To arrange cover and info */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center them horizontally */
+    justify-content: center; /* Center them vertically (though less relevant now) */
+    max-width: 400px; /* Adjust max-width for the stacked layout */
+    margin: 0 auto; /* Center the container */
+    gap: 20px; /* Space between the image and the text */
+    text-align: center; /* Center the text within the book info */
+  }
+  
+  .current-book-container .book-info {
+    text-align: center; /* Center the text below the image */
+    margin-bottom: 5px; /* Reduce the margin between paragraphs */
+    line-height: 1.2; /* Slightly reduce the line height */
+  }
+  
+  .current-book-container img {
+    max-width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 5px; /* Optional: add rounded corners to the cover */
+  }
+  
+  .book-info {
+    text-align: left; /* Align book info text to the left */
+  }
+
+  #my-books-grid {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #my-books-grid h2 {
+    margin-bottom: 20px;
+  }
+  
+  .book-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Creates responsive columns */
+    gap: 20px; /* Spacing between book items */
+    max-width: 1000px; /* Adjust as needed */
+    margin: 0 auto; /* Center the grid */
+  }
+  
+  .book-item {
+    text-align: center;
+  }
+  
+  .book-item img {
+    max-width: 100%; /* Ensure images don't overflow their container */
+    height: auto;
+    border-radius: 5px; /* Optional: rounded corners for images */
+    margin-bottom: 10px; /* Space between image and text */
+  }
+  
+  .book-item h3 {
+    font-size: 1em; /* Adjust as needed */
+    margin-bottom: 5px;
+  }
+  
+  .book-item p {
+    font-size: 0.9em; /* Adjust as needed */
+    color: #555; /* Optional: slightly gray author text */
+  }
+
+  #book-count {
+    padding: 10px 20px; /* Add some padding */
+    overflow: auto; /* To contain the floated elements */
+  }
+  
+  #book-count p {
+    margin: 5px 0; /* Adjust vertical margin */
+  }
+  
+  #book-count p:first-child {
+    float: left;
+  }
+  
+  #book-count p:last-child {
+    float: right;
+  }
+
+nav > ul > li > a[href="my-books.html"] {
+  color: black !important;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: silver;
+}
+
+nav > ul > li > a[href="my-books.html"]:hover {
+  background-color: #a9a9a9;
+}
+
+  /* Style for the active "My Books" link on my-books.html */
+body.my-books-page nav ul li a[href="my-books.html"] {
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: silver; /* Or whatever background you have for the button */
+    border: 1px solid #888; /* Subtle gray border */
+    filter: blur(0.6px); /* Apply the blur */
+  }
+  
+  /* Optionally, remove the regular button hover effect on the active link */
+  body.my-books-page nav ul li a[href="my-books.html"]:hover {
+    background-color: silver; /* Keep the same background on hover */
+    cursor: default; /* Change cursor to indicate it's the current page */
+  }
+  
+  /* Revert the "Home" link styling to its non-active state on my-books.html */
+  body.my-books-page nav ul li a[href="index.html"] {
+    background-color: lightgray; /* Or its default non-active background */
+    border: none; /* Remove the border */
+    filter: none; /* Remove the blur */
+  }
+
+  .book-item {
+    text-align: center;
+    min-height: 500px; /* Adjust to accommodate the larger image */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 30px; /* Add space between book items vertically */
+  }
+  
+  .book-item img {
+    max-width: 100%;
+    max-height: 350px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Space between image and title */
+    object-fit: contain;
+  }
+  
+  .book-item h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+  }
+  
+  .book-item p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 8px; /* Space after the author */
+  }

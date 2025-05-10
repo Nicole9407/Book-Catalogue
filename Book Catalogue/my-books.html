@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=IM+Fell+English:ital@0;1&family=MedievalSharp&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body class="my-books-page">
+    <header style="background-image: url('./Images/Main-Page-Images/Header-Background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; padding-bottom: 20px; color: silver;">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link-3d">Home</a></li>
+                <li id="book-count-nav">Total Books: <span id="count-nav">0</span></li>
+                <li><a href="my-books.html" class="nav-link-3d">My Books</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="text-align: center; color: black; font-family: Gothic A1;">My Collection</h1>
+        <div style="text-align: center; margin-bottom: 10px;">
+            <label for="sort-books">Sort By:</label>
+            <select id="sort-books">
+                <option value="author-az">Author (A-Z)</option>
+                <option value="author-za">Author (Z-A)</option>
+                <option value="release-date">Release Date</option>
+                <option value="books-az">Books (A-Z)</option>
+                <option value="books-za">Books (Z-A)</option>
+            </select>
+        </div>
+        <section id="my-books-grid">
+            <h2>My Books</h2>
+            <div class="book-row">
+                <div class="book-item">
+                    <img src="./Images/cursed princess club.jpg" alt="Cover of cursed princess club">
+                    <h3>Cursed Princess Club</h3>
+                    <p><strong>Author:</strong> LambCat</p>
+            <p><strong>Release Date:</strong> 23/05/2024</p>
+            <p><strong>Genre: </strong> Graphic Novel</p>
+            <p><strong>Page Count:</strong> 278 pages</p>
+            <p><strong>Series:</strong> Book 1</p>
+            <p><strong>Edition:</strong> Paperback</p>
+                    </div>
+                <div class="book-item">
+                    <img src="./Images/cursed princess club 2.jpg" alt="Cover of cursed princess club book 2">
+                    <h3>Cursed Princess Club 2</h3>
+                    <p><strong>Author:</strong> LambCat</p>
+            <p><strong>Release Date:</strong> 20/08/2024</p>
+            <p><strong>Genre: </strong> Graphic Novel</p>
+            <p><strong>Page Count:</strong> 356 pages</p>
+            <p><strong>Series:</strong> Book 2</p>
+            <p><strong>Edition:</strong> Paperback</p>
+                    </div>
+                <div class="book-item">
+                    <img src="./Images/cursed princess club 3.jpg" alt="Cover of cursed princess club book 3">
+                    <h3>Cursed Princess Club 3</h3>
+                    <p><strong>Author:</strong> Lambcat</p>
+            <p><strong>Release Date:</strong> 03/12/2024</p>
+            <p><strong>Genre: </strong> Graphic Novel</p>
+            <p><strong>Page Count:</strong> 288 pages</p>
+            <p><strong>Series:</strong> Book 3</p>
+            <p><strong>Edition:</strong> Paperback</p>
+                    </div>
+            </div>
+            <div class="book-row">
+                <div class="book-item">
+                    <img src="./Images/James.jpg" alt="Cover of James">
+                    <h3>James</h3>
+                    <p><strong>Author:</strong> Percival Everett</p>
+            <p><strong>Release Date:</strong> 27/02/2025</p>
+            <p><strong>Genre: </strong> Historical fiction, Contemporary fiction, Adventure</p>
+            <p><strong>Page Count:</strong> 320 pages</p>
+            <p><strong>Series:</strong> Standalone</p>
+            <p><strong>Edition:</strong> Paperback</p>
+                    </div>
+                <div class="book-item">
+                    <img src="./Images/Mythica.jpg" alt="Cover of Mythica">
+                    <h3>Mythica: A New History of Homer’s World, Through the Women Written Out of It </h3>
+                        <p><strong>Author:</strong> Emily Hauser</p>
+                        <p><strong>Release Date:</strong> 17/04/2025</p>
+                        <p><strong>Genre: </strong> Historical, Ancient History: up to 500AD, Literary Studies, Archaeology</p>
+                        <p><strong>Page Count:</strong> 496 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Hardback</p>
+                    </div>
+                <div class="book-item">
+                    <img src="./Images/Expanded Earth.jpg" alt="Cover of Expanded Earth">
+                    <h3>The Expanded Earth</h3>
+                    <p><strong>Author:</strong> Mikey Please</p>
+            <p><strong>Release Date:</strong> 03/04/2025</p>
+            <p><strong>Genre: </strong> Fiction, Contemporay fiction</p>
+            <p><strong>Page Count:</strong> 448 pages</p>
+            <p><strong>Series:</strong> Standalone</p>
+            <p><strong>Edition:</strong> Hardback</p>
+                    </div>
+            </div>
+
+            <section id="my-books-grid">
+                <div class="book-row">
+                    <div class="book-item">
+                        <img src="./Images/ministry of time.jpg" alt="Cover of ministry of time">
+                        <h3>The Ministry of Time</h3>
+                        <p><strong>Author:</strong> Kaliane Bradley</p>
+                        <p><strong>Release Date:</strong> 27/03/2025</p>
+                        <p><strong>Genre: </strong> Science Fiction, Contemporay fiction, Contemporary Romance</p>
+                        <p><strong>Page Count:</strong> 368 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback, Limited edition color case</p>
+                        </div>
+                    <div class="book-item">
+                        <img src="./Images/wycherleys.jpg" alt="Cover of the wycherleys">
+                        <h3>The Wycherleys</h3>
+                        <p><strong>Author:</strong> Annaliese Avery</p>
+                        <p><strong>Release Date:</strong> 06/05/2025</p>
+                        <p><strong>Genre: </strong> Fiction, Fantasy, Historical, Romance</p>
+                        <p><strong>Page Count:</strong> 432 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback, Sprayed Edge</p>
+                        </div>
+                    <div class="book-item">
+                        <img src="./Images/lessons in chemistry.jpg" alt="Cover of lessons in chemistry">
+                        <h3>Lessons In Chemistry</h3>
+                        <p><strong>Author:</strong> Bonnie Garmus</p>
+                        <p><strong>Release Date:</strong> 02/03/2023</p>
+                        <p><strong>Genre: </strong> Historical Fiction, Social Issues, Feminism</p>
+                        <p><strong>Page Count:</strong> 400 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                        </div>
+                </div>
+                <div class="book-row">
+                    <div class="book-item">
+                        <img src="./Images/hunted.jpg" alt="Cover of hunted">
+                        <h3>Hunted</h3>
+                        <p><strong>Author:</strong> Abir Mukherjee</p>
+                        <p><strong>Release Date:</strong> 30/01/2025</p>
+                        <p><strong>Genre: </strong> Thriller, Political and Legal</p>
+                        <p><strong>Page Count:</strong> 512 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback, Exclusive Bookmark</p>
+                        </div>
+                    <div class="book-item">
+                        <img src="./Images/food detective.jpg" alt="Cover of kamogawa food detective">
+                        <h3>Kamogawa Food Detective</h3>
+                        <p><strong>Author:</strong> Hisashi Kashiwai (author), Jesse Kirkwood (translator)</p>
+                        <p><strong>Release Date:</strong> 04/04/2024</p>
+                        <p><strong>Genre: </strong> Crime & Mystery, Contemporary Fiction</p>
+                        <p><strong>Page Count:</strong> 208 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                        </div>
+                    <div class="book-item">
+                        <img src="./Images/red hollow.jpg" alt="Cover of the red hollow">
+                        <h3>The Red Hollow</h3>
+                        <p><strong>Author:</strong> Natalie Marlow</p>
+                        <p><strong>Release Date:</strong> 30/01/2025</p>
+                        <p><strong>Genre: </strong> Crime & Mystery, Historical Fiction</p>
+                        <p><strong>Page Count:</strong> 320 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                        </div>
+                </div>
+                <section id="my-books-grid">
+                    <div class="book-row">
+                        <div class="book-item">
+                            <img src="./Images/dying for christmas.jpg" alt="Cover of dying for christmas">
+                            <h3>Dying For Christmas</h3>
+                            <p><strong>Author:</strong> Tammy Cohen</p>
+                        <p><strong>Release Date:</strong> 20/11/2014</p>
+                        <p><strong>Genre: </strong> Crime & Mystery</p>
+                        <p><strong>Page Count:</strong> 400 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                            </div>
+                        <div class="book-item">
+                            <img src="./Images/exorcism.jpg" alt="Cover of my best friend's exorcism">
+                            <h3>My Best Friend's Exorcism</h3>
+                            <p><strong>Author:</strong> Grady Hendrix</p>
+                        <p><strong>Release Date:</strong> 11/07/2017</p>
+                        <p><strong>Genre: </strong> Horror, Thriller, Contemporary Fiction</p>
+                        <p><strong>Page Count:</strong> 336 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                            </div>
+                        <div class="book-item">
+                            <img src="./Images/budget.jpg" alt="Cover of Budget Gluten Free">
+                            <h3>Budget Gluten Free</h3>
+                            <p><strong>Author:</strong> Becky Excell</p>
+                        <p><strong>Release Date:</strong> 13/02/2025</p>
+                        <p><strong>Genre: </strong> Cookbook, Special diets</p>
+                        <p><strong>Page Count:</strong> 256 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Hardback</p>
+                            </div>
+                    </div>
+                    <div class="book-row">
+                        <div class="book-item">
+                            <img src="./Images/witchcraft.webp" alt="Cover of witchcraft for wayward girls">
+                            <h3>Witchcraft for Wayward Girls</h3>
+                            <p><strong>Author:</strong> Grady Hendrix</p>
+                        <p><strong>Release Date:</strong> 16/01/2025</p>
+                        <p><strong>Genre: </strong> Horror</p>
+                        <p><strong>Page Count:</strong> 400 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Hardback, Exclusive, Signed, Sprayed Edges</p>
+                            </div>
+                        <div class="book-item">
+                            <img src="./Images/promise.jpg" alt="Cover of christmas promise">
+                            <h3>Keeping a Christmas Promise</h3>
+                            <p><strong>Author:</strong> Jo Thomas</p>
+                        <p><strong>Release Date:</strong> 13/10/2022</p>
+                        <p><strong>Genre: </strong> Contemporary Romance</p>
+                        <p><strong>Page Count:</strong> 368 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                            </div>
+                        <div class="book-item">
+                            <img src="./Images/cold.jpg" alt="Cover of baby it's cold outside">
+                            <h3>Baby It's Cold Outside</h3>
+                            <p><strong>Author:</strong> Emily Bell</p>
+                        <p><strong>Release Date:</strong> 14/10/2021</p>
+                        <p><strong>Genre: </strong> Contemporary Romance, Contemporary Fiction</p>
+                        <p><strong>Page Count:</strong> 352 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                            </div>
+                    </div>
+                    <section id="my-books-grid">
+                        <div class="book-row">
+                            <div class="book-item">
+                                <img src="./Images/butter.webp" alt="Cover of butter">
+                                <h3>Butter</h3>
+                                <p><strong>Author:</strong> Asako Yuzuki (author), Polly Barton (translator)</p>
+                        <p><strong>Release Date:</strong> 26/09/2024</p>
+                        <p><strong>Genre: </strong> Contemporary Fiction, Crime & Mystery, Thriller</p>
+                        <p><strong>Page Count:</strong> 464 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Hardback, Gold foil cover, red end papers, red ribbon, head and tail bands</p>
+                                </div>
+                            <div class="book-item">
+                                <img src="./Images/19th christmas.jpg" alt="Cover of 19th Christmas">
+                                <h3>19th Christmas</h3>
+                                <p><strong>Author:</strong> James Patterson</p>
+                        <p><strong>Release Date:</strong> 01/10/2020</p>
+                        <p><strong>Genre: </strong> Crime & Mystery, Thriller, Contemporary Fiction</p>
+                        <p><strong>Page Count:</strong> 384 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                                </div>
+                            <div class="book-item">
+                                <img src="./Images/the dry.jpg" alt="Cover of the dry">
+                                <h3>The Dry</h3>
+                                <p><strong>Author:</strong> Jane Harper</p>
+                        <p><strong>Release Date:</strong> 01/16/2017</p>
+                        <p><strong>Genre: </strong> Crime & Mystery, Contemporary Fiction</p>
+                        <p><strong>Page Count:</strong> 432 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                                </div>
+                        </div>
+                        <div class="book-row">
+                            <div class="book-item">
+                                <img src="./Images/coraline.jpg" alt="Cover of coraline">
+                                <h3>Coraline</h3>
+                                <p><strong>Author:</strong> Neil Gaiman (author), Chris Riddell (illustrator)</p>
+                        <p><strong>Release Date:</strong> 10/10/2013</p>
+                        <p><strong>Genre: </strong> Fantasy, Fiction</p>
+                        <p><strong>Page Count:</strong> 208 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback, 20th Anniversary Edition</p>
+                                </div>
+                            <div class="book-item">
+                                <img src="./Images/gluten free christmas.jpg" alt="Cover of gluten free christmas">
+                                <h3>Gluten Free Christmas</h3>
+                                <p><strong>Author:</strong> Becky Excell</p>
+                        <p><strong>Release Date:</strong> 31/08/2023</p>
+                        <p><strong>Genre: </strong> Cookbook, Specific Diets</p>
+                        <p><strong>Page Count:</strong> 224 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Hardback</p>
+                                </div>
+                            <div class="book-item">
+                                <img src="./Images/silver eyes.jpg" alt="Cover of silver eyes">
+                                <h3>The Silver Eyes</h3>
+                                <p><strong>Author:</strong> Scott Cawthon (author), Kira Breed-Wrisley (author)</p>
+                        <p><strong>Release Date:</strong> 09/03/2017</p>
+                        <p><strong>Genre: </strong> Adventure, Crime & Mystery, Thriller</p>
+                        <p><strong>Page Count:</strong> 400 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                                </div>
+                        </div>
+                        <section id="my-books-grid">
+                            <div class="book-row">
+                                <div class="book-item">
+                                    <img src="./Images/shadow district.jpg" alt="Cover of shadow district">
+                                    <h3>Shadow District</h3>
+                                    <p><strong>Author:</strong> Arnaldur Indridason (author), Victoria Cribb (translator)</p>
+                        <p><strong>Release Date:</strong> 01/03/2018</p>
+                        <p><strong>Genre: </strong> Crime & Mystery</p>
+                        <p><strong>Page Count:</strong> 368 pages</p>
+                        <p><strong>Series:</strong> Standalone</p>
+                        <p><strong>Edition:</strong> Paperback</p>
+                                    </div>
+                                <div class="book-item">
+                                    <img src="./Images/good girls.webp" alt="Cover of good girl's guide to murder">
+                                    <h3>A Good Girl's Guide to Murder</h3>
+                                    <p><strong>Author:</strong> Holly Jackson</p>
+                                    <p><strong>Release Date:</strong> 02/05/2019</p>
+                                    <p><strong>Genre: </strong> Crime & Mystery, Thriller</p>
+                                    <p><strong>Page Count:</strong> 448 pages</p>
+                                    <p><strong>Series:</strong> Standalone</p>
+                                    <p><strong>Edition:</strong> Paperback</p>
+                                    </div>
+                                <div class="book-item">
+                                    <img src="./Images/twin.jpg" alt="Cover of twin crowns">
+                                    <h3>Twin Crowns</h3>
+                                    <p><strong>Author:</strong> Katherine Webber (author), Catherine Doyle (author)</p>
+                                    <p><strong>Release Date:</strong> 12/05/2022</p>
+                                    <p><strong>Genre: </strong> Fiction, Fantasy, Romance</p>
+                                    <p><strong>Page Count:</strong> 528 pages</p>
+                                    <p><strong>Series:</strong> Standalone</p>
+                                    <p><strong>Edition:</strong> Paperback</p>
+                                    </div>
+                            </div>
+                            <div class="book-row">
+                                <div class="book-item">
+                                    <img src="./Images/duk.jpg" alt="Cover of the duke and i">
+                                    <h3>The Duke and I</h3>
+                                    <p><strong>Author:</strong> Julia Quinn</p>
+                                    <p><strong>Release Date:</strong> 01/12/2020</p>
+                                    <p><strong>Genre: </strong> Historical Romance</p>
+                                    <p><strong>Page Count:</strong> 352 pages</p>
+                                    <p><strong>Series:</strong> Book 1</p>
+                                    <p><strong>Edition:</strong> Paperback</p>
+                                    </div>
+                                <div class="book-item">
+                                    <img src="./Images/viscount.jpg" alt="Cover of viscount who loved me">
+                                    <h3>The Viscount Who Loved Me</h3>
+                                    <p><strong>Author:</strong> Julia Quinn</p>
+                                    <p><strong>Release Date:</strong> 22/03/2022</p>
+                                    <p><strong>Genre: </strong> Historical Romance</p>
+                                    <p><strong>Page Count:</strong> 384 pages</p>
+                                    <p><strong>Series:</strong> Book 2</p>
+                                    <p><strong>Edition:</strong> Paperback</p>
+                                    </div>
+                                <div class="book-item">
+                                    <img src="./Images/offer.jpg" alt="Cover of offer from a gentleman">
+                                    <h3>Offer From a Gentleman</h3>
+                                    <p><strong>Author:</strong> Julia Quinn</p>
+                                    <p><strong>Release Date:</strong> 04/02/2021</p>
+                                    <p><strong>Genre: </strong> Historical Romance</p>
+                                    <p><strong>Page Count:</strong> 384 pages</p>
+                                    <p><strong>Series:</strong> Book 3</p>
+                                    <p><strong>Edition:</strong> Paperback</p>
+                                    </div>
+                            </div>
+                            <section id="my-books-grid">
+                                <div class="book-row">
+                                    <div class="book-item">
+                                        <img src="./Images/romancing.jpg" alt="Cover of romancing mr bridgerton">
+                                        <h3>Romancing Mr Bridgerton</h3>
+                                        <p><strong>Author:</strong> Julia Quinn</p>
+                                        <p><strong>Release Date:</strong> 04/02/2021</p>
+                                        <p><strong>Genre: </strong> Historical Romance</p>
+                                        <p><strong>Page Count:</strong> 384 pages</p>
+                                        <p><strong>Series:</strong> Book 4</p>
+                                        <p><strong>Edition:</strong> Paperback</p>
+                                        </div>
+                                    <div class="book-item">
+                                        <img src="./Images/underground railroad.jpg" alt="Cover of underground railroad">
+                                        <h3>The Underground Railroad</h3>
+                                        <p><strong>Author:</strong> Colson Whitehead</p>
+                                        <p><strong>Release Date:</strong> 29/06/2017</p>
+                                        <p><strong>Genre: </strong> Contemporary Fiction</p>
+                                        <p><strong>Page Count:</strong> 400 pages</p>
+                                        <p><strong>Series:</strong> Standalone</p>
+                                        <p><strong>Edition:</strong> Paperback</p>
+                                        </div>
+                                    <div class="book-item">
+                                        <img src="./Images/haunting.webp" alt="Cover of she is a haunting">
+                                        <h3>She Is A Haunting</h3>
+                                        <p><strong>Author:</strong> Trang Thanh Tran</p>
+                                        <p><strong>Release Date:</strong> 28/02/2023</p>
+                                        <p><strong>Genre: </strong> Horror, Adventure, Thriller, Family</p>
+                                        <p><strong>Page Count:</strong> 352 pages</p>
+                                        <p><strong>Series:</strong> Standalone</p>
+                                        <p><strong>Edition:</strong> Paperback</p>
+                                        </div>
+                                </div>
+                                <div class="book-row">
+                                    <div class="book-item">
+                                        <img src="./Images/paris.webp" alt="Cover of the paris apartment">
+                                        <h3>The Paris Apartment</h3>
+                                        <p><strong>Author:</strong> Lucy Foley</p>
+                                        <p><strong>Release Date:</strong> 29/09/2022</p>
+                                        <p><strong>Genre: </strong> Thriller, Crime & Mystery</p>
+                                        <p><strong>Page Count:</strong> 416 pages</p>
+                                        <p><strong>Series:</strong> Standalone</p>
+                                        <p><strong>Edition:</strong> Paperback</p>
+                                        </div>
+                                    <div class="book-item">
+                                        <img src="./Images/lincoln.jpg" alt="Cover of lincoln lawyer">
+                                        <h3>Lincoln Lawyer</h3>
+                                        <p><strong>Author:</strong> Michael Connelly</p>
+                                        <p><strong>Release Date:</strong> 06/11/2014</p>
+                                        <p><strong>Genre: </strong> Crime & Mystery</p>
+                                        <p><strong>Page Count:</strong> 480 pages</p>
+                                        <p><strong>Series:</strong> Standalone</p>
+                                        <p><strong>Edition:</strong> Paperback</p>
+                                        </div>
+                                    <div class="book-item">
+                                        <img src="./Images/anxious.jpg" alt="Cover of anxious people">
+                                        <h3>Anxious People</h3>
+                                        <p><strong>Author:</strong> Fredrik Backman</p>
+                                        <p><strong>Release Date:</strong> 19/08/2021</p>
+                                        <p><strong>Genre: </strong> Crime & Mystery, Contemporary Fiction</p>
+                                        <p><strong>Page Count:</strong> 416 pages</p>
+                                        <p><strong>Series:</strong> Standalone</p>
+                                        <p><strong>Edition:</strong> Paperback</p>
+                                        </div>
+                                </div>
+                                <section id="my-books-grid">
+                                    <div class="book-row">
+                                        <div class="book-item">
+                                            <img src="./Images/bunny.jpg" alt="Cover of bunny call">
+                                            <h3>Bunny Call</h3>
+                                            <p><strong>Author:</strong> Scott Cawthon (author), Elley Cooper (author), Andrea Waggener (author)</p>
+                                        <p><strong>Release Date:</strong> 03/09/2020</p>
+                                        <p><strong>Genre: </strong> Horror, Adventure, Family</p>
+                                        <p><strong>Page Count:</strong> 240 pages</p>
+                                        <p><strong>Series:</strong> Book 5 of Fazbear's Frights</p>
+                                        <p><strong>Edition:</strong> Paperback</p>
+                                            </div>
+                                        <div class="book-item">
+                                            <img src="./Images/cursed.jpg" alt="Cover of cursed">
+                                            <h3>Cursed</h3>
+                                            <p><strong>Author:</strong> Marissa Meyer</p>
+                                        <p><strong>Release Date:</strong> 08/11/2022</p>
+                                        <p><strong>Genre: </strong> Fiction, Fantasy, Romance</p>
+                                        <p><strong>Page Count:</strong> 496 pages</p>
+                                        <p><strong>Series:</strong> Book 2</p>
+                                        <p><strong>Edition:</strong> Paperback, sprayed edges</p>
+                                            </div>
+                                        <div class="book-item">
+                                            <img src="./Images/I'm glad.webp" alt="Cover of i'm glad my mum died">
+                                            <h3>I'm Glad My Mum Died</h3>
+                                            <p><strong>Author:</strong> Jenette Mccurdy</p>
+                                            <p><strong>Release Date:</strong> 15/09/2022</p>
+                                            <p><strong>Genre: </strong> Autobiography</p>
+                                            <p><strong>Page Count:</strong> 320 pages</p>
+                                            <p><strong>Series:</strong> Standalone</p>
+                                            <p><strong>Edition:</strong> Hardback</p>
+                                            </div>
+                                    </div>
+                                    <div class="book-row">
+                                        <div class="book-item">
+                                            <img src="./Images/raven.jpg" alt="Cover of raven scholar">
+                                            <h3>The Raven Scholar</h3>
+                                            <p><strong>Author:</strong> Antonia Hodgson</p>
+                                        <p><strong>Release Date:</strong> 17/04/2025</p>
+                                        <p><strong>Genre: </strong> Fantasy</p>
+                                        <p><strong>Page Count:</strong> 656 pages</p>
+                                        <p><strong>Series:</strong> Standalone</p>
+                                        <p><strong>Edition:</strong> Harback, Exclusive Bookmark, Signed, Sprayed edges</p>
+                                            </div>
+                                    </div>
+                                    </section>
+                                </section>                            
+                            </section>
+                        </section>
+                    </section>                
+                </section>
+            </section>
+    </main>
+
+</main> <footer>
+    <p>&copy; 2025 My Personal Library</p>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
